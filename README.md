@@ -32,7 +32,7 @@ The application provides a hands-on way to understand concepts like cryptographi
 
 ## 🎮 Live Demo
 
-Experience BlockSim in action by visiting our [live demo](https://blockchain-simulator-demo.vercel.app/) or follow the installation instructions to run it locally.
+Experience BlockSim in action by visiting our [live demo](https://blockchain-simulator.vercel.app/) or follow the installation instructions to run it locally.
 
 ## 🔧 Technologies
 
@@ -327,50 +327,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [crypto-js](https://github.com/brix/crypto-js) for cryptographic functions
 - [elliptic](https://github.com/indutny/elliptic) for elliptic curve cryptography
 
-## 🚀 Deployment
-
-### Deploying to Vercel
-
-BlockSim is optimized for deployment on Vercel. Follow these steps to deploy your own instance:
-
-1. **Fork or clone this repository**
-   ```bash
-   git clone https://github.com/your-username/blockchain-simulator.git
-   cd blockchain-simulator
-   ```
-
-2. **Install Vercel CLI (optional)**
-   ```bash
-   npm install -g vercel
-   ```
-
-3. **Deploy to Vercel**
-   
-   **Option 1: Using Vercel CLI**
-   ```bash
-   vercel
-   ```
-   
-   **Option 2: Using Vercel Dashboard**
-   - Go to [vercel.com](https://vercel.com)
-   - Create a new project and import your repository
-   - Deploy with default settings (Vercel will detect the configuration)
-
-4. **Environment Configuration**
-   - No special environment variables are needed for basic deployment
-   - For custom domain setup, follow Vercel's documentation
-
-The included `vercel.json` file handles all the necessary configuration for proper deployment, including API routes and static file serving.
-
-### Deployment Considerations
-
-- **Data Persistence**: Note that the blockchain data is reset when the server restarts, as it's stored in memory
-- **Wallet Security**: In a production environment, consider implementing more secure wallet storage
-- **Rate Limiting**: For public deployments, consider adding rate limiting to prevent abuse
-
----
 
 <div align="center">
-  <p>Created with ❤️ for blockchain education and demonstration</p>
-  <p>Copyright © 2023 BlockSim</p>
+  <p>Created with ❤️ for blockchain education and demonstration by Alphamoris</p>
+  <p>Copyright © 2025 BlockSim</p>
 </div> 
