@@ -1,8 +1,6 @@
 # 🌐 BlockSim: Blockchain Simulator
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/username/blockchain-simulator/main/public/images/banner.png" alt="BlockSim Banner" width="850">
-  
   <p><strong>A modern, interactive blockchain simulation platform for education and demonstration</strong></p>
   
   <p>
@@ -33,10 +31,6 @@ The application provides a hands-on way to understand concepts like cryptographi
 - **Docker Support**: Easy containerized deployment with Docker and Docker Compose
 
 ## 🎮 Live Demo
-
-<div align="center">
-  <img src="public/images/demo.gif" alt="BlockSim Demo" width="750">
-</div>
 
 Experience BlockSim in action by visiting our [live demo](https://blockchain-simulator-demo.vercel.app/) or follow the installation instructions to run it locally.
 
@@ -119,10 +113,6 @@ The project uses modern web technologies for an optimal learning experience:
 
 ### 1. Exploring the Blockchain
 
-<div align="center">
-  <img src="public/images/blockchain-explorer.png" alt="Blockchain Explorer" width="650">
-</div>
-
 The main dashboard displays:
 - **Blockchain Statistics**: Total blocks, transactions, mining difficulty, and rewards
 - **Block Visualization**: Interactive blocks showing hash values, transactions, and timestamps
@@ -132,10 +122,6 @@ Use the validation feature to check that all blocks are correctly linked and all
 
 ### 2. Wallet Management
 
-<div align="center">
-  <img src="public/images/wallet-management.png" alt="Wallet Management" width="650">
-</div>
-
 - **Create Wallets**: Generate new cryptographic key pairs for transaction signing
 - **View Balances**: Monitor account balances across the blockchain
 - **Secure Keys**: Private keys are displayed only once at creation (save them securely!)
@@ -143,10 +129,6 @@ Use the validation feature to check that all blocks are correctly linked and all
 > ⚠️ **Important Security Note**: In a real blockchain, you would never share your private key. For educational purposes only, this simulator displays the private key at wallet creation.
 
 ### 3. Transaction Creation
-
-<div align="center">
-  <img src="public/images/transaction-creation.png" alt="Transaction Creation" width="650">
-</div>
 
 Creating transactions is simple:
 1. Select a source wallet (sender)
@@ -158,10 +140,6 @@ All transactions are cryptographically signed and wait in the pending transactio
 
 ### 4. Mining Process
 
-<div align="center">
-  <img src="public/images/mining-process.png" alt="Mining Process" width="650">
-</div>
-
 The mining interface demonstrates proof-of-work:
 - Select a wallet to receive the mining reward
 - Start the mining process to create a new block
@@ -171,10 +149,6 @@ The mining interface demonstrates proof-of-work:
 The mining reward is automatically added to the selected miner's wallet.
 
 ### 5. Tamper Detection Demo
-
-<div align="center">
-  <img src="public/images/tamper-detection.png" alt="Tamper Detection" width="650">
-</div>
 
 To demonstrate blockchain's tamper-proof nature:
 1. Select an existing block
@@ -198,10 +172,6 @@ This is perfect for a quick overview of the entire blockchain process.
 
 ### Core Components
 
-<div align="center">
-  <img src="public/images/architecture-diagram.png" alt="Architecture Diagram" width="750">
-</div>
-
 1. **Block**
    - Properties: index, timestamp, transactions, previousHash, hash, nonce
    - Methods: calculateHash(), mineBlock()
@@ -223,10 +193,6 @@ This is perfect for a quick overview of the entire blockchain process.
    - Purpose: Manages cryptographic keys for transaction signing
 
 ### Data Flow
-
-<div align="center">
-  <img src="public/images/data-flow.png" alt="Data Flow" width="750">
-</div>
 
 1. **Wallet Creation**: Generate public/private key pairs
 2. **Transaction Creation**: Sign transactions with private keys
@@ -280,10 +246,6 @@ This is perfect for a quick overview of the entire blockchain process.
 
 ### Cryptographic Hash Functions
 
-<div align="center">
-  <img src="https://i.imgur.com/AcWm92L.png" alt="Hashing Diagram" width="650">
-</div>
-
 BlockSim uses SHA-256 hashing which transforms input data into a fixed-size string of characters. Key properties:
 - **Deterministic**: Same input always produces same output
 - **Fast Computation**: Quickly calculate hash from any input
@@ -292,20 +254,12 @@ BlockSim uses SHA-256 hashing which transforms input data into a fixed-size stri
 
 ### Digital Signatures
 
-<div align="center">
-  <img src="https://i.imgur.com/V1nNYSW.png" alt="Digital Signatures" width="650">
-</div>
-
 Transactions use elliptic curve cryptography to create signatures that:
 - **Prove Ownership**: Only the private key owner can create valid signatures
 - **Prevent Tampering**: Any change to transaction data invalidates the signature
 - **Non-repudiation**: Sender cannot deny creating the transaction
 
 ### Proof-of-Work
-
-<div align="center">
-  <img src="https://i.imgur.com/4jXsH7B.png" alt="Proof of Work" width="650">
-</div>
 
 Mining implements a simplified proof-of-work algorithm:
 1. Take transaction data + previous hash + nonce
