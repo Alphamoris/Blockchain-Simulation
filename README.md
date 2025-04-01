@@ -32,7 +32,7 @@ The application provides a hands-on way to understand concepts like cryptographi
 
 ## 🎮 Live Demo
 
-Experience BlockSim in action by visiting our [live demo](https://blockchain-simulator.vercel.app/) or follow the installation instructions to run it locally.
+Experience BlockSim in action by visiting our [live demo](https://blockchain-simulation-dk.vercel.app/) or follow the installation instructions to run it locally.
 
 ## 🔧 Technologies
 
