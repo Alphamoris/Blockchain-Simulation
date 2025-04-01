@@ -1,7 +1,7 @@
 # 🌐 BlockSim: Blockchain Simulator
 
 <div align="center">
-  <img src="https://i.imgur.com/JxJRnAp.png" alt="BlockSim Banner" width="850">
+  <img src="https://raw.githubusercontent.com/username/blockchain-simulator/main/public/images/banner.png" alt="BlockSim Banner" width="850">
   
   <p><strong>A modern, interactive blockchain simulation platform for education and demonstration</strong></p>
   
@@ -35,10 +35,10 @@ The application provides a hands-on way to understand concepts like cryptographi
 ## 🎮 Live Demo
 
 <div align="center">
-  <img src="https://i.imgur.com/UvWGMn9.gif" alt="BlockSim Demo" width="750">
+  <img src="public/images/demo.gif" alt="BlockSim Demo" width="750">
 </div>
 
-Experience BlockSim in action by visiting our [live demo](https://blocksim-demo.herokuapp.com) or follow the installation instructions to run it locally.
+Experience BlockSim in action by visiting our [live demo](https://blockchain-simulator-demo.vercel.app/) or follow the installation instructions to run it locally.
 
 ## 🔧 Technologies
 
@@ -120,7 +120,7 @@ The project uses modern web technologies for an optimal learning experience:
 ### 1. Exploring the Blockchain
 
 <div align="center">
-  <img src="https://i.imgur.com/jTZUvx3.png" alt="Blockchain Explorer" width="650">
+  <img src="public/images/blockchain-explorer.png" alt="Blockchain Explorer" width="650">
 </div>
 
 The main dashboard displays:
@@ -133,7 +133,7 @@ Use the validation feature to check that all blocks are correctly linked and all
 ### 2. Wallet Management
 
 <div align="center">
-  <img src="https://i.imgur.com/pVL5qRF.png" alt="Wallet Management" width="650">
+  <img src="public/images/wallet-management.png" alt="Wallet Management" width="650">
 </div>
 
 - **Create Wallets**: Generate new cryptographic key pairs for transaction signing
@@ -145,7 +145,7 @@ Use the validation feature to check that all blocks are correctly linked and all
 ### 3. Transaction Creation
 
 <div align="center">
-  <img src="https://i.imgur.com/H2Cx3kG.png" alt="Transaction Creation" width="650">
+  <img src="public/images/transaction-creation.png" alt="Transaction Creation" width="650">
 </div>
 
 Creating transactions is simple:
@@ -159,7 +159,7 @@ All transactions are cryptographically signed and wait in the pending transactio
 ### 4. Mining Process
 
 <div align="center">
-  <img src="https://i.imgur.com/QVnLE6w.png" alt="Mining Process" width="650">
+  <img src="public/images/mining-process.png" alt="Mining Process" width="650">
 </div>
 
 The mining interface demonstrates proof-of-work:
@@ -173,7 +173,7 @@ The mining reward is automatically added to the selected miner's wallet.
 ### 5. Tamper Detection Demo
 
 <div align="center">
-  <img src="https://i.imgur.com/sRZJN8W.png" alt="Tamper Detection" width="650">
+  <img src="public/images/tamper-detection.png" alt="Tamper Detection" width="650">
 </div>
 
 To demonstrate blockchain's tamper-proof nature:
@@ -199,7 +199,7 @@ This is perfect for a quick overview of the entire blockchain process.
 ### Core Components
 
 <div align="center">
-  <img src="https://i.imgur.com/RvWnV5P.png" alt="Architecture Diagram" width="750">
+  <img src="public/images/architecture-diagram.png" alt="Architecture Diagram" width="750">
 </div>
 
 1. **Block**
@@ -225,7 +225,7 @@ This is perfect for a quick overview of the entire blockchain process.
 ### Data Flow
 
 <div align="center">
-  <img src="https://i.imgur.com/9mYl8Bq.png" alt="Data Flow" width="750">
+  <img src="public/images/data-flow.png" alt="Data Flow" width="750">
 </div>
 
 1. **Wallet Creation**: Generate public/private key pairs
