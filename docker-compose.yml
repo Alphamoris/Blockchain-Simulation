@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  blockchain-simulator:
+    build: .
+    container_name: blockchain-simulator
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./wallets:/app/wallets
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped 

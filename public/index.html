@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="BlockSim - An interactive blockchain simulator for learning about blockchain technology">
+    <meta name="theme-color" content="#3498db">
+    <title>BlockSim | Blockchain Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cube"></i> BlockSim
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#blockchain-section" class="active">Blockchain</a></li>
+                <li><a href="#wallet-section">Wallets</a></li>
+                <li><a href="#transaction-section">Transactions</a></li>
+                <li><a href="#mining-section">Mining</a></li>
+                <li><a href="#tamper-section">Tamper</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Blockchain Simulator</h1>
+                <p>An interactive platform to learn and explore blockchain technology</p>
+                <div class="hero-buttons">
+                    <button id="demo-btn" class="btn primary-btn">Run Demo</button>
+                    <button id="reset-btn" class="btn secondary-btn">Reset Chain</button>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+            </div>
+        </section>
+
+        <section id="blockchain-section" class="section">
+            <h2>Blockchain Explorer</h2>
+            <div class="blockchain-stats">
+                <div class="stat-card">
+                    <div class="stat-title">Blocks</div>
+                    <div class="stat-value" id="blocks-count">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Transactions</div>
+                    <div class="stat-value" id="tx-count">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Difficulty</div>
+                    <div class="stat-value" id="difficulty">2</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Mining Reward</div>
+                    <div class="stat-value" id="mining-reward">100</div>
+                </div>
+            </div>
+            <div class="chain-validation">
+                <button id="validate-btn" class="btn primary-btn">Validate Chain</button>
+                <div id="validation-result" class="validation-result">Chain validation status will appear here</div>
+            </div>
+            <div class="blockchain-container">
+                <div id="blockchain-blocks" class="blockchain-blocks">
+                    <!-- Blocks will be added here dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="wallet-section" class="section">
+            <h2>Manage Wallets</h2>
+            <div class="wallet-form">
+                <div class="form-group">
+                    <input type="text" id="wallet-name" placeholder="Enter wallet name">
+                    <button id="create-wallet-btn" class="btn primary-btn">Create New Wallet</button>
+                </div>
+            </div>
+            <div class="wallet-info">
+                <h3>Wallet Information</h3>
+                <div id="wallet-details">
+                    <div class="empty-state">No wallet selected. Create a new wallet or select one from the list.</div>
+                </div>
+            </div>
+            <div class="wallets-container">
+                <h3>Available Wallets</h3>
+                <div id="wallets-list" class="wallets-list">
+                    <!-- Wallets will be added here dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="transaction-section" class="section">
+            <h2>Create Transactions</h2>
+            <div class="tx-form">
+                <div class="form-group">
+                    <label for="from-wallet">From Wallet:</label>
+                    <select id="from-wallet">
+                        <option value="">Select wallet</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="to-address">To Address:</label>
+                    <select id="to-address">
+                        <option value="">Select recipient</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tx-amount">Amount:</label>
+                    <input type="number" id="tx-amount" min="0" step="1" placeholder="Enter amount">
+                </div>
+                <button id="create-tx-btn" class="btn primary-btn">Create Transaction</button>
+            </div>
+            
+            <div class="pending-tx">
+                <h3>Pending Transactions</h3>
+                <div id="pending-tx-list" class="pending-tx-list">
+                    <div class="empty-state">No pending transactions</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mining-section" class="section">
+            <h2>Mining Interface</h2>
+            <div class="mining-form">
+                <div class="form-group">
+                    <label for="miner-wallet">Miner Wallet:</label>
+                    <select id="miner-wallet">
+                        <option value="">Select miner wallet</option>
+                    </select>
+                </div>
+                <button id="start-mining-btn" class="btn primary-btn">Start Mining</button>
+            </div>
+            <div class="mining-visualization">
+                <h3>Mining Visualization</h3>
+                <div class="mining-animation">
+                    <div class="mining-blocks">
+                        <div class="mining-block pending"></div>
+                        <i class="fas fa-arrow-right mining-arrow"></i>
+                        <div class="mining-block mined"></div>
+                    </div>
+                    <div id="mining-status" class="mining-status">Waiting for mining to start...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tamper-section" class="section">
+            <h2>Tamper Detection Demo</h2>
+            <div class="tamper-form">
+                <div class="form-group">
+                    <label for="tamper-block">Block to tamper:</label>
+                    <select id="tamper-block">
+                        <option value="">Select block</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tamper-amount">New amount:</label>
+                    <input type="number" id="tamper-amount" min="0" step="1" placeholder="New amount">
+                </div>
+                <button id="tamper-btn" class="btn danger-btn">Tamper with Block</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-cube"></i> BlockSim
+            </div>
+            <div class="footer-text">
+                <p>A simple blockchain simulator created for educational purposes</p>
+                <p>&copy; 2025 BlockSim - All rights reserved</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/Alphamoris/Blockchain-Simulation.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://github.com/Alphamoris/Blockchain-Simulation.git/README.md" target="_blank"><i class="fas fa-book"></i> Documentation</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="private-key-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Private Key</h3>
+            <p>Save this private key securely. It will only be shown once.</p>
+            <div class="private-key-display" id="private-key-display"></div>
+            <button id="copy-key-btn" class="btn secondary-btn">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
